@@ -79,8 +79,8 @@ exclude-labels:
   - rollback
 
 replacers:
-  - search: '/DOPS-(\d+)/g'
-    replace: 'https://issuecenter.atlassian.net/browse/DOPS-$1'
+  - search: '\b[A-Z][A-Z0-9_]+-[1-9][0-9]*\b'
+    replace: 'https://issuecenter.atlassian.net/browse/$1'
   - search: '/CVE-(\d{4})-(\d+)/g'
     replace: 'https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-$1-$2'
 
